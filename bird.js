@@ -13,7 +13,7 @@ function Bird(){
         this.positionY+=this.gravity;
         this.positionX+=-1 + Math.random()*2; //oscileaza si pozitia pe orizontala fata-spate
 
-        if (this.positionY>window.innerHeight-40 || this.positionY<=-20) {
+        if (this.positionY>window.innerHeight-40 || this.positionY<=-20) { // daca atinge peretele de sus sau de jos se opreste jocul
             this.positionY = window.innerHeight/2-10;
             this.gravity=0;
             alert('Scor obtinut: ' +numberOfPipesScore +". Incercati din nou!");
